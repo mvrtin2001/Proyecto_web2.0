@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo_formulario.css">
+    <!-- incorporamos las jquey y validadores -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="img/menu.svg" alt="" class="menu">
+        <nav class="menu-navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="index.html">Servicio</a>
+            <a href="index.html">Galeria</a>
+            <a href="index.html">Registro</a>
+        </nav>
+        <body>
+            <form method="POST" id="formulario1" action="#">
+                <table border="0">
+                    <tr>
+                        <td><label for="id_txtEmail">Email    :</label></td>
+                        <td><input type="email" name="txtEmail" value="" id="id_txtEmail" placeholder="Ingresa su Email aquí" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Contraseña     :</label></td>
+                        <td><input type="text" name="txtContrasena" value="" required="" id="id_txtContrasena" placeholder="Ingrese Password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Repetir Contraseña     :</label></td>
+                        <td><input type="text" name="txtRepetirContrasena" value="" required="" id="id_txtRepetirContrasena"placeholder="Repetir Password" />
+                        </td>
+                    </tr>
+                    </tbody>
+                </table><br>
+                <input type="submit" value="Enviar" name="button" />
+            </form>
+         
+        </body>
+        
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
